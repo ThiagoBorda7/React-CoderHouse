@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Rubik&display=swap');
+
+.container_productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 30px;
+}
+
+.producto_imagen {
+    max-width: 100%;
+}
+
+.producto_info {
+    margin: 1rem 0;
+    padding: .5 rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto_titulo {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+}

@@ -1,18 +1,16 @@
+import './NavBar.css';
 import { BsSearch } from 'react-icons/bs';
-import { FiShoppingBag } from 'react-icons/fi';
+import { CarWidget } from '../CarWidget/CarWidget';
 
 export const NavBar = () => {
     return (
-        <header style={{ backgroundColor: '#d1ac9f', height: '200px' }}>
+        <header className='header_tienda'>
             <div className='container'>
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'space-between'
-                }}>
-                    <div style={{ margin: '20px 30px', cursor: 'pointer' }}>
+                <div className='container_navbar'>
+                    <div className='search_bar'>
                         <BsSearch style={{ color: 'white', fontSize: '1.5rem' }}/>
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <div className='navbar'>
                         <div>
                             <img src={"https://flaviashoemaker.com/cdn/shop/files/home-logo-flavia-08.png"} alt="logo" style={{ width: '250px', height: '100px' }} />
                         </div>
@@ -26,8 +24,8 @@ export const NavBar = () => {
                             </ul>
                         </nav>
                     </div>
-                    <div style={{ margin: '20px 30px', cursor: 'pointer' }}>
-                        <FiShoppingBag style={{ color: 'white', fontSize: '1.5rem' }} />
+                    <div className='cart_icon'>
+                        <CarWidget />
                     </div>
                 </div>
             </div>

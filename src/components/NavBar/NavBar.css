@@ -1,0 +1,34 @@
+.header_tienda {
+    width: 100%;
+    height: 180px;
+    background-color: #d1ac9f;
+}
+
+.container_navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_bar, .cart_icon {
+    line-height: 90px;
+    margin: 20px 30px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.items:hover {
+    color: gray;
+}
