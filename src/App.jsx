@@ -1,6 +1,9 @@
 import './App.css';
-import { NavBar, ItemCount, ItemListContainer, Item } from './components';
-// import { Home } from './pages/Home';
+import { NavBar } from './components/NavBar/NavBar';
+import { Item } from './components/Item/Item';
+import { Home } from './pages/Home';
+import { ItemCount } from './components/ItemCount/ItemCount';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 
 
 
@@ -9,19 +12,17 @@ import { NavBar, ItemCount, ItemListContainer, Item } from './components';
 //Se escribe JavaScrpt con {}
 //Eventos y estilos en camelCase
 
-const handleCart = (cant) => {
-  console.log('La cantidad es:', cant)
-}
-
 function App() {
+
+  const handleCart = ((qty)=>{
+    console.log('La cantidad es:', qty);
+  })
+  
   return (
       <div>
         <NavBar />
-        {/* <Home /> */}
-        {/* <ItemListContainer greeting={"Hola Mundo"} /> */}
-        {/* <div>
-          <ItemCount stock={10} onAdd={handleCart} />
-        </div>  */}
+        <Home />
+        {/* <div className='container'><ItemCount stock={10} onAdd={handleCart} /></div> */}
       </div>
   )
 }

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Rubik&display=swap');
 
 .container_productos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    max-width: 250px;
     margin-left: 30px;
 }
 

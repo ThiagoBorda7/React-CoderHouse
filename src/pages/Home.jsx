@@ -1,23 +1,29 @@
-import { useState, useEffect } from "react";
-import { ItemListContainer } from "../components";
-
+import { useState, useEffect } from "react"
+import { getZapatos } from "../lib/zapatos.requests";
+import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
 
 export const Home = () => {
-    const [productos, setProductos] = useState([]);
 
-    useEffect(() =>{
+    const [products, setProducts] = useState([]);
+    const [IsLoading, setIsLoading] = useState(true);
+
+    useEffect(()=>{
+
         getZapatos()
-            .then(res => setProductos(res))
-
-    }, []);
-
+            .then(res => {
+                setIsLoading(false)
+                setProducts(res)})
+    },[]);
 
     return (
-        <div>
-            Pagina Principal
-            <div className='container'>
-                <ItemListContainer productos = {productos} />
-            </div>
+
+    <div>
+        <h2 style={{textAlign: 'center', margin: '20px 0'}}>Pagina Principal</h2>
+        <div className='container'>
+            <h5>{IsLoading ? "Cargando..." : "Listo"}</h5> 
+            <ItemListContainer products={products} />
         </div>
+    </div>
+
     );
-};
+}

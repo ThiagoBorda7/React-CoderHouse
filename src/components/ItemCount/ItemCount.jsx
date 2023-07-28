@@ -13,12 +13,12 @@ export const ItemCount = ({ stock, onAdd }) => {
     }
 
     return (
-        <div style={{textAlign: 'center', margin: '40px 0'}}>
+        <div>
             <div>
                 <button onClick={() => handleSub()}>-</button>
-                <span style={{margin: '0 15px'}}>{count}</span>
+                <span>{count}</span>
                 <button onClick={() => handleSum()}>+</button>
-                <button style={{marginLeft: '15px'}} disabled = {!stock} onClick={() => onAdd(count)}>Agregar al carrito</button>
+                <button disabled={!stock} onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
         </div>
     )
