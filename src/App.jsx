@@ -1,11 +1,9 @@
 import './App.css';
-import { NavBar } from './components/NavBar/NavBar';
-import { Item } from './components/Item/Item';
+import { NavBar, ItemCount, ItemListContainer, Item } from './components';
 import { Home } from './pages/Home';
-import { ItemCount } from './components/ItemCount/ItemCount';
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
-
-
+import { Detail } from './pages/Detail';
+import { Category } from './pages/Category';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 
 //Etiquetas de apertura y de cierre <div> </div> o auto cierre <img />
 //className en lugar de class
@@ -14,15 +12,17 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 
 function App() {
 
-  const handleCart = ((qty)=>{
-    console.log('La cantidad es:', qty);
-  })
+  const router = createBrowserRouter(createRoutesFromElements(
+    <Route element = {<NavBar />} >
+      <Route path = '/' element = {<Home />} /> 
+      <Route path = '/item/:id' element = {<Detail />} />
+      <Route path = '/categoria/:id' element = {<Category />} />
+    </Route>
+  ));
   
   return (
       <div>
-        <NavBar />
-        <Home />
-        {/* <div className='container'><ItemCount stock={10} onAdd={handleCart} /></div> */}
+        <RouterProvider router={router} />
       </div>
   )
 }

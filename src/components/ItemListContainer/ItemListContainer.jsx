@@ -6,7 +6,8 @@ export const ItemListContainer = ({ products }) => (
     <div className='item_container'>
         {products.map((product) => (
             <Item
-                key={product.id} 
+                key={product.id}
+                id={product.id} 
                 imagen={product.imagen} 
                 titulo={product.titulo} 
                 precio={product.precio} 

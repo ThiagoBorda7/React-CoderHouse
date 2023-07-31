@@ -1,0 +1,61 @@
+.container_carrousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container_carrousel_img {
+    height: 600px;
+}
+
+.carrousel_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 3s;
+}
+
+.left_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: gray;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.right_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: gray;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.container_circles {
+    display: flex;
+    justify-content: center;
+}
+
+.circles {
+    margin: 30px 10px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.active {
+    background-color: black;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}

@@ -1,6 +1,6 @@
 .header_tienda {
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-color: #d1ac9f;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .search_bar, .cart_icon {
-    line-height: 90px;
+    line-height: 100px;
     margin: 20px 30px;
     cursor: pointer;
 }
@@ -24,11 +24,18 @@
 
 .items {
     display: inline-block;
+    font-family: inherit;
+    font-size: 18px;
+    margin-top: 15px;
     margin-right: 20px;
-    color: white;
     cursor: pointer;
 }
 
-.items:hover {
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover {
     color: gray;
 }
