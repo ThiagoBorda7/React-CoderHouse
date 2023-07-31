@@ -1,11 +1,11 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { BsCircle } from 'react-icons/bs';
 import "./Carrousel.css";
 
 export const Carrousel = () => {
 
-    const IMAGES = ["https://flaviashoemaker.com/cdn/shop/products/IMG-20220820-WA0011.jpg", "https://flaviashoemaker.com/cdn/shop/products/IMG-20220720-WA0042.jpg", "https://flaviashoemaker.com/cdn/shop/products/IMG-20220709-WA0003.jpg"];
+    const IMAGES = ["https://flaviashoemaker.com/cdn/shop/products/IMG-20220820-WA0011.jpg", "https://flaviashoemaker.com/cdn/shop/products/IMG-20220720-WA0042.jpg", "https://flaviashoemaker.com/cdn/shop/products/IMG-20220709-WA0003.jpg", "https://flaviashoemaker.com/cdn/shop/products/IMG-20220928-WA0020.jpg"];
     const [selectedIndex, setSelectedIndex] = useState(0);
     //Selecciono una imagen para iniciar el slider
     const [selectecImage, setSelectedImage] = useState(IMAGES[0]);
@@ -43,6 +43,7 @@ export const Carrousel = () => {
         setSelectedIndex(slideIndex);
     }
 
+
     return (
         <div className='container_carrousel'>
             <div className='container_carrousel_img'>
@@ -62,7 +63,6 @@ export const Carrousel = () => {
                     ))
                 }
             </div>
-            <hr style={{color: '#cfcccc'}} />
         </div>
     )
 }

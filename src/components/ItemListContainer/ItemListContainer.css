@@ -1,5 +1,7 @@
 .item_container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 30px 20px;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    gap: 1rem;
+    margin: 40px 0;
 }

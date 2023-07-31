@@ -1,16 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Rubik&display=swap');
 
 .container_productos {
-    max-width: 300px;
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    margin: 10px 10px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.producto {
+    width: 100%;
 }
 
 .producto_imagen {
     max-width: 100%;
 }
 
+.container_productos:hover {
+    transform: scale(1.02);
+}
+
 .producto_info {
-    margin: 1rem 0;
+    margin: 1rem .5rem;
     padding: .5 rem;
     display: flex;
     flex-direction: column;
@@ -20,4 +35,8 @@
 .producto_titulo {
     font-family: 'Assistant', sans-serif;
     font-size: 1rem;
+}
+
+.producto_precio {
+    margin-bottom: .25rem;
 }

@@ -2,7 +2,6 @@ import './NavBar.css';
 import { BsSearch } from 'react-icons/bs';
 import { CarWidget } from '../CarWidget/CarWidget';
 import { NavLink, Outlet } from 'react-router-dom';
-import { Carrousel } from '../Carrousel/Carrousel';
 
 export const NavBar = () => {
     return (<>

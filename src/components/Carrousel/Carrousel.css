@@ -3,6 +3,7 @@
     height: 100%;
     position: relative;
     margin-bottom: 30px;
+    border-bottom: 1px solid #c2c2c2;
 }
 
 .container_carrousel_img {
