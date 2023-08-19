@@ -158,5 +158,16 @@
 }
 
 
+/*------------CARRITO------------*/
+
+.container_cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.products_cart {
+  background-color: gray;
+}
+
 
 

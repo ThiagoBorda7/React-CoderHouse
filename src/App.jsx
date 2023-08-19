@@ -3,6 +3,7 @@ import { NavBar, ItemCount, ItemListContainer, Item } from './components';
 import { Home } from './pages/Home';
 import { Detail } from './pages/Detail';
 import { Category } from './pages/Category';
+import { Cart } from './pages/Cart';
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import { CartProvider } from './state/Cart.context';
 import { ThemeProvider } from './state/Theme.context';
@@ -19,6 +20,7 @@ function App() {
       <Route path = '/' element = {<Home />} /> 
       <Route path = '/item/:id' element = {<Detail />} />
       <Route path = '/categoria/:id' element = {<Category />} />
+      <Route path = '/cart' element = {<Cart />} />
     </Route>
   ));
   
