@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { BsCircle } from 'react-icons/bs';
 import "./Carrousel.css";

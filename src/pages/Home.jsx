@@ -3,6 +3,9 @@ import { getZapatos } from "../lib/zapatos.requests";
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
 import { Carrousel } from "../components/Carrousel/Carrousel";
 import { Announce } from "../components/Announce/Announce";
+import { MainContent } from "../components/MainContent/MainContent";
+import { Banner } from "../components/Banner/Banner";
+import { Gallery } from "../components/Gallery/Gallery";
 
 export const Home = () => {
 
@@ -23,8 +26,9 @@ export const Home = () => {
         <div>
             <Carrousel />
             <Announce />
-            <h5 style={{textAlign: 'center', margin: '20px 0'}}>{IsLoading ? "Cargando ..." : "Listo"}</h5> 
-            <ItemListContainer products={products} />
+            <MainContent />
+            <Banner />
+            <Gallery />
         </div>
     </div>
 

@@ -36,7 +36,7 @@ const ZAPATOS = [
         stock: 6,
     },
     {
-        id: 6,
+        id: 5,
         titulo: "Botín Hanzell Arena",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
         categoria: "Botines",

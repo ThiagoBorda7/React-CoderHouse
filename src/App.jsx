@@ -4,6 +4,8 @@ import { Home } from './pages/Home';
 import { Detail } from './pages/Detail';
 import { Category } from './pages/Category';
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import { CartProvider } from './state/Cart.context';
+import { ThemeProvider } from './state/Theme.context';
 
 //Etiquetas de apertura y de cierre <div> </div> o auto cierre <img />
 //className en lugar de class
@@ -22,7 +24,11 @@ function App() {
   
   return (
       <div>
-        <RouterProvider router={router} />
+        <ThemeProvider>
+          <CartProvider>
+            <RouterProvider router={router} />
+          </CartProvider>
+        </ThemeProvider>
       </div>
   )
 }

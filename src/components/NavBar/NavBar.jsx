@@ -20,16 +20,16 @@ export const NavBar = () => {
                         <nav>
                             <ul style={{ listStyleType: 'none' }}>
                                 <li className='items'>
-                                    <NavLink style={({isActive}) => ({color: isActive ? 'gray' : 'white'})} className='links' to = {"/"}>Home</NavLink>
+                                    <NavLink style={({isActive}) => ({backgroundColor: isActive ? '#8d6f6b' : ''})} className='links' to = {"/"}>Home</NavLink>
                                 </li>
                                 <li className='items'>
-                                    <NavLink style={({isActive}) => ({color: isActive ? 'gray' : 'white'})} className='links' to = {"/categoria/botines"}>Botines</NavLink>
+                                    <NavLink style={({isActive}) => ({backgroundColor: isActive ? '#8d6f6b' : ''})} className='links' to = {"/categoria/botines"}>Botines</NavLink>
                                 </li>
                                 <li className='items'>
-                                    <NavLink style={({isActive}) => ({color: isActive ? 'gray' : 'white'})} className='links' to = {"/categoria/mocasines"}>Mocasines</NavLink>
+                                    <NavLink style={({isActive}) => ({backgroundColor: isActive ? '#8d6f6b' : ''})} className='links' to = {"/categoria/mocasines"}>Mocasines</NavLink>
                                 </li>
                                 <li className='items'>
-                                    <NavLink style={({isActive}) => ({color: isActive ? 'gray' : 'white'})} className='links' to = {"/categoria/charol"}>Charol</NavLink>
+                                    <NavLink style={({isActive}) => ({backgroundColor: isActive ? '#8d6f6b' : ''})} className='links' to = {"/categoria/charol"}>Charol</NavLink>
                                 </li>
                             </ul>
                         </nav>

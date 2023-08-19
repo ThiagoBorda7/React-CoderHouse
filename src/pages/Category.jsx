@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import { getZapatos } from "../lib/zapatos.requests";
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
 

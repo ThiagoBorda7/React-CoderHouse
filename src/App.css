@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -56,65 +58,73 @@
 
 .title {
   font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
 }
 
 .sub_title {
   font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
   color: #999;
   font-weight: bolder;
 }
 
 .card_price {
   font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
 }
 
 .title_description {
   font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
   text-decoration: underline;
-  color: #999;
+  color: #333;
   font-weight: bolder;
   margin: 10px 0;
 }
 
 .card_size {
   display: flex;
-  flex-direction: column;
+  justify-content: start;
+  flex-direction: row;
 }
 
 .title_size {
   font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
   text-decoration: underline;
-  color: #999;
+  color: #333;
   font-weight: bolder;
   margin: 10px 0;
 }
 
-.list_size {
-  list-style-type: none;
-}
-
 .item_size {
   display: inline-block;
-  margin-right: 30px;
-  border: 2px solid #999;
-  padding: 8px 12px ;
+  width: 50px;
+  height: 50px;
+  border: 2px solid gray;
+  margin-right: 20px;
 }
 
-.item_size:hover {
-  border: 2px solid black;
+.container_item_size {
+  display: inline-block;
 }
 
 .title_color {
   font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
   text-decoration: underline;
-  color: #999;
+  color: #333;
   font-weight: bolder;
   margin: 20px 0;
 }
 
 .color {
   background-color: #804000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: #fff;
   padding: 8px 20px;
   cursor: pointer;
@@ -126,28 +136,27 @@
 
 .title_cant {
   font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
   text-decoration: underline;
-  color: #999;
+  color: #333;
   font-weight: bolder;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
-/* Slider Zapatos */
-
-/* .container_slide {
-  display: flex;
-  justify-content: space-between;
-  width: 900px;
-  height: 550px;
-  background-color: white;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
-  margin-bottom: 30px;
-  overflow: hidden;
+.inactive {
+  background-color: transparent;
 }
 
-.img_slide {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}  */
+.inactive:hover {
+  border: 2px solid #333;
+}
+
+.active_item {
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
 

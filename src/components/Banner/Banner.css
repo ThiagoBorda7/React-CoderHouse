@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Rubik&display=swap');
+
+.container_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.container_banner h2 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.container_button_banner {
+    margin: 40px 0;
+}
+
+.boton_banner {
+    font-family: 'Assistant', sans-serif;
+    background-color: #7a5752;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.boton_banner:hover {
+    background-color: #8d6f6b;
+}

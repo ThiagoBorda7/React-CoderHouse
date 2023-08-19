@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+.container_content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.cards {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    height: 400px;
+    width: 100%;
+    margin: 0 30px;
+    transition: ease all 2.3s;
+    perspective: 1200px;
+}
+
+.cards:hover .cover {
+    transform: rotateX(0deg) rotateY(-180deg);
+}
+
+.cards:hover .cover:before {
+    transform: translateZ(30px);
+}
+
+.cards:hover .cover:after {
+    background-color: black;
+}
+
+.cards:hover .cover .title {
+    transform: translateZ(100px);
+}
+
+.cards:hover .cover button {
+    transform: translateZ(-60px) rotatey(-180deg);
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cover:before {
+    content: "";
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    transition: ease all 2.3s;
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
+}
+
+.cover:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    transition: ease all 1.3s;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.card_uno {
+    background-image: url(https://flaviashoemaker.com/cdn/shop/products/IMG-20220820-WA0011.jpg);
+}
+
+.card_dos {
+    background-image: url(https://flaviashoemaker.com/cdn/shop/products/IMG-20220720-WA0042.jpg);
+}
+
+.card_tres {
+    background-image: url(https://flaviashoemaker.com/cdn/shop/products/IMG-20220625-WA0007_1.jpg);
+}
+
+.title_main {
+    font-weight: 600;
+    position: absolute;
+    bottom: 55px;
+    left: 50px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    z-index: 3;
+    font-size: 2.5em;
+    transform: translateZ(0px);
+}
+
+.card_back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    transform: translateZ(-1px);
+}
+
+.image_one {
+    background-image: url(https://flaviashoemaker.com/cdn/shop/products/IMG-20220820-WA0026.jpg);
+}
+
+.image_two {
+    background-image: url(https://flaviashoemaker.com/cdn/shop/products/IMG-20220720-WA0025.jpg);
+}
+
+.image_three {
+    background-image: url(https://flaviashoemaker.com/cdn/shop/products/IMG-20220625-WA0006_1.jpg);
+}
+
+.card_back:before {
+    content: "";
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    transition: ease all 2.3s;
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
+}
+
+.card_back:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    transition: ease all 1.3s;
+    background: rgba(0, 0, 0, 0.2);
+}
+

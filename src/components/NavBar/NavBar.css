@@ -1,7 +1,8 @@
 .header_tienda {
     width: 100%;
     height: 200px;
-    background-color: #d1ac9f;
+    background-color: #7a5752 ;
+    background-size: cover;
 }
 
 .container_navbar {
@@ -34,8 +35,6 @@
 .links {
     text-decoration: none;
     color: white;
+    padding: 8px 10px;
 }
 
-.links:hover {
-    color: gray;
-}
