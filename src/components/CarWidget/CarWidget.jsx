@@ -10,6 +10,6 @@ export const CarWidget = () => {
 
     return (
         <div style={{color: 'white'}} onClick={() => navigate('/cart')}>
-            <FiShoppingBag style={{ color: 'white', fontSize: '1.5rem' }} /> ({getCartCant()})
+            <FiShoppingBag style={{ color: 'white', fontSize: '1.5rem' }} /> {getCartCant() ? <span>({getCartCant()})</span> : null}
         </div>
 )};
