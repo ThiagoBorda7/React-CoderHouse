@@ -1,141 +1,140 @@
 const ZAPATOS = [
     {
-        id: 1,
         titulo: "Botin Tanzania Cognac",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Botines",
-        precio: 1000,
+        categoria: "botines",
+        precio: 40000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220820-WA0011.jpg",
         stock: 10,
     },
     {
-        id: 2,
         titulo: "Botin Nairobi Negro",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Botines",
-        precio: 1000,
+        categoria: "botines",
+        precio: 45000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220720-WA0042.jpg",
-        stock: 10,
+        stock: 8,
     },
     {
-        id: 3,
         titulo: "Botin Hazell Verde Musgo",
-        descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Botines",
-        precio: 1000,
+        descripcion: "Botín de caña Media con cordones Material Gamuzón forrado en su interior de badana y suela de cuero con huella antideslizante. Altura de taco 5cm.",
+        categoria: "botines",
+        precio: 50000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220618-WA0031_0e98bf0c-4067-422c-9e22-46fde20d08ff.jpg",
         stock: 5,
     },
     {
-        id: 4,
         titulo: "Botin Cloe",
-        descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Botines",
+        descripcion: "Botines elásticados en cuero croco caimán, taco de 7cm",
+        categoria: "botines",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/files/image.jpg",
         stock: 6,
     },
     {
-        id: 5,
         titulo: "Botín Hanzell Arena",
-        descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Botines",
+        descripcion: "Botín de caña Media con cordones Material Gamuzón forrado en su interior de badana y suela de cuero con huella antideslizante. Altura de taco 5cm.",
+        categoria: "botines",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220625-WA0007_1.jpg",
         stock: 7,
     },
     {
-        id: 6,
         titulo: "Mocasines Martina Negro",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Mocasines",
+        categoria: "mocasines",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20221009-WA0041.jpg",
         stock: 7,
     },
     {
-        id: 7,
         titulo: "Mocasines Kenia Leopard",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Mocasines",
+        categoria: "mocasines",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220622-WA0003.jpg",
         stock: 6,
     },
     {
-        id: 8,
         titulo: "Mocasines Kenia Vaquita",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Mocasines",
+        categoria: "mocasines",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220730-WA0023.jpg",
         stock: 9,
     },
     {
-        id: 9,
         titulo: "Mocasines Martina Verde",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Mocasines",
+        categoria: "mocasines",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220423-WA0012.jpg",
         stock: 6,
     },
     {
-        id: 10,
+
         titulo: "Mocasines Martina Caramelo",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Mocasines",
+        categoria: "mocasines",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220709-WA0003.jpg",
         stock: 6,
     },
     {
-        id: 11,
         titulo: "Sandalia Luisa Animal Print Negro Taco",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Charol",
+        categoria: "charol",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220920-WA0054_2.jpg",
         stock: 7,
     },
     {
-        id: 12,
         titulo: "Sandalia Luisa Animal Print Beige Taco",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Charol",
+        categoria: "charol",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20221030-WA0022.jpg",
         stock: 9,
     },
     {
-        id: 13,
         titulo: "Zapato Megan Uva Taco",
         descripcion: "Botín de Caña Media de punta cuadrada, material cuero textura croco en su exterior y forrado de badana en su interior, taco texano de 7cm, suela Neolite",
-        categoria: "Charol",
+        categoria: "charol",
         precio: 1000,
         imagen: "https://flaviashoemaker.com/cdn/shop/products/IMG-20220928-WA0020.jpg",
         stock: 5,
     }
 ];
 
-export const getZapatos = (id) => {
+import { collection, getDocs, getDoc, addDoc, doc, where, query} from "firebase/firestore";
+import { db } from "./config";
 
-    const _zapatos = id ? ZAPATOS.filter((zapato) => zapato.categoria.toLowerCase() === id) : ZAPATOS;
+const zapatosRef = collection(db, "Items");
 
-    return new Promise((res)=>{
-        setTimeout(()=>{
-            res(_zapatos);
-        },2000);
+export const getZapatos = async (categoria) => {
+
+    const q = categoria ? query(zapatosRef, where('categoria', '==', categoria)) : zapatosRef;
+    let zapatos = [];
+
+    const querySnapshot = await getDocs(q);
+
+    querySnapshot.forEach((doc)=> {
+        zapatos = [...zapatos, { ...doc.data(), id: doc.id}];
     });
+    return zapatos;
 };
 
-export const getZapato = (id) => {
+export const getZapato = async (id) => {
+    const document = doc(db, 'Items', id);
+    const docSnap = await getDoc(document);
 
-    const zapato = ZAPATOS.filter((zapato) => zapato.id === id)[0];
+    if(docSnap.exists()) return { id: docSnap.id, ...docSnap.data()};
 
-    return new Promise((res)=>{
-        setTimeout(()=>{
-            res(zapato);
-        },500);
-    });
+    return null;
 };
+
+export const cargarData = async () => {
+    ZAPATOS.forEach(async (zapato)=> {
+        await addDoc(zapatosRef, zapato)
+    });
+}

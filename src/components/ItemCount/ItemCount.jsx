@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./ItemCount.css";
 
-export const ItemCount = ({ stock, onAdd }) => {
+export const ItemCount = ({ stock = 0, onAdd }) => {
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     const handleSum = () => {
         if( stock > count ) setCount(count + 1)
@@ -20,7 +20,7 @@ export const ItemCount = ({ stock, onAdd }) => {
                 <span style={{margin:'0 10px', fontSize:'18px'}}>{count}</span>
                 <button onClick={() => handleSum()}>+</button>
             </div>
-            <button className='button_carrito' disabled={!stock} onClick={() => onAdd(count)}>Agregar al carrito</button>
+            <button className='button_carrito' disabled={!stock} onClick={() => {onAdd(count); setCount(1);}}>Agregar al carrito</button>
         </div>
         
     )

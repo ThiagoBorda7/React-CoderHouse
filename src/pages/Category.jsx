@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Route, Routes, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getZapatos } from "../lib/zapatos.requests";
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
+import { Loader } from "../components/Loader/Loader";
 
 export const Category = () => {
 
@@ -20,9 +21,8 @@ export const Category = () => {
     return (
 
     <div>
-        <div>
-            <h5>{IsLoading ? "Cargando ..." : "Listo"}</h5> 
-            <ItemListContainer products={products} />
+        <div> 
+            <ItemListContainer products={products} loading={IsLoading} />
         </div>
     </div>
 

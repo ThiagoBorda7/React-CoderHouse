@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useMemo, useState } from "react";
 
 const CartContext = createContext([]);
 
@@ -8,21 +8,20 @@ export const CartProvider = ({children}) => {
 
     const [cart, setCart] = useState([]);
 
+    const itemInCart = (id) => cart.find((product) => product.id === id);
+
     //AÑADIR
 
     const addProduct = (item, cant) => {
 
-        const element = cart.find((product) => product.id === item.id);
+        const element = itemInCart(item.id);
 
         if (!element) return setCart([...cart, {...item, cant}]);
-        
 
-        if (element) {
-            const newCart = cart.map((product) => 
-                product.id === item.id ? {...product, cant: product.cant + cant} : product
-            );
-            setCart(newCart);
-        }
+        const newCart = cart.map((product) => 
+            product.id === item.id ? {...product, cant: product.cant + cant} : product
+        );
+        setCart(newCart);
     };
 
     //ELIMINAR 
@@ -38,11 +37,11 @@ export const CartProvider = ({children}) => {
 
     //TOTAL ITEMS
 
-    const getCartCant = () => cart.reduce((acc, item) => acc + item.cant, 0);
+    const getCartCant = useMemo(() => cart.reduce((acc, item) => acc + item.cant, 0),[cart]);
 
     //TOTAL PRECIO
 
-    const getTotalPrice = () => cart.reduce((acc, item) => acc + item.precio * item.cant, 0)
+    const getTotalPrice = useMemo(() => cart.reduce((acc, item) => acc + item.precio * item.cant, 0),[cart]);
 
     const value = {
         cart,
@@ -50,7 +49,8 @@ export const CartProvider = ({children}) => {
         getCartCant,
         getTotalPrice,
         removeProduct,
-        cleanCart
+        cleanCart,
+        itemInCart
     };
 
     return (
