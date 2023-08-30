@@ -9,7 +9,7 @@ export const NavBar = () => {
             <div className='container'>
                 <div className='container_navbar'>
                     <div className='search_bar'>
-                        <BsSearch style={{ color: 'white', fontSize: '1.5rem' }} />
+                        
                     </div>
                     <div className='navbar'>
                         <div>

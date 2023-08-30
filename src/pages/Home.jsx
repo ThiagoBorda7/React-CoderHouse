@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { cargarData, getZapatos } from "../lib/zapatos.requests";
+import { getZapatos } from "../lib/zapatos.requests";
 import { Carrousel } from "../components/Carrousel/Carrousel";
 import { Announce } from "../components/Announce/Announce";
 import { MainContent } from "../components/MainContent/MainContent";

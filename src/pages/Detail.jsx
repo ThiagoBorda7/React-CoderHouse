@@ -86,7 +86,7 @@ export const Detail = () => {
                     </div>
                     <div className='card_cant'>
                         <h4 className='title_cant'>Cantidad</h4>
-                        <ItemCount stock={zapato.stock - (itemInCart?.(+id)?.cant || 0)} onAdd={handleAdd} />
+                        <ItemCount stock={zapato.stock - (itemInCart?.(id)?.cant || 0)} onAdd={handleAdd} />
                     </div>
                 </div>
             </div>
